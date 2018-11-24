@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.clue {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 60%;
+  margin: auto;
+  background: whitesmoke;
+  h2,
+  p {
+    color: black;
+    text-align: left;
+    width: 90%;
+  }
+  mat-form-field,
+  button {
+    margin-bottom: 1em;
+    width: 90%;
+  }
+  * {
+    color: black;
+  }
+}
+.main {
+  color: black;
+  height: 20%;
+  button {
+    background-color: maroon;
+  }
+  input {
+    color:black;
+  }
+}
+input {
+  color: black;
+  * {
+    color: black;
+  }
+}

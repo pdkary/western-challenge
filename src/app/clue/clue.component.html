@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-card class="clue">
+    <mat-grid-list cols="3" rowHeight="10em">
+      <mat-grid-tile [colspan]="3" [rowspan]="1">
+        <h2>Clue {{ numIndex }}</h2>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="3" [rowspan]="1">
+        <p>{{ strClue }}</p>
+      </mat-grid-tile>
+      <b *ngIf="warning">{{ strWarning }}</b>
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-form-field appearance="outline">
+          <mat-label>Answer</mat-label>
+          <input matInput placeholder="Your Answer" [(ngModel)]="answerInput" />
+          <mat-icon matSuffix>extension</mat-icon>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <button mat-raised-button (click)="onClick()">Go</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+</div>
